@@ -1,0 +1,211 @@
+/* App.css */
+
+/* Common styles for both pages */
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif; /* Modern and clean font */
+  background-color: #f8f8f8; /* Light gray background color */
+}
+
+.page {
+  padding: 20px;
+  color: #333;
+}
+
+/* Home page */
+.home-page {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: #f5f5f5; /* Light background color */
+}
+
+.profile-card {
+  width: 200px;
+  margin: 10px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background: #12c2e9;
+  background: -webkit-linear-gradient(to right, #c471ed, #6e48aa);
+  background: linear-gradient(to right, #c471ed, #6e48aa);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+
+h1 {
+  font-size: 2em;
+  color: #6e48aa;
+  text-align: center;
+  padding: 20px 0;
+  background: -webkit-linear-gradient(to right, #c471ed, #6e48aa);
+  background: linear-gradient(to right, #c471ed, #6e48aa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.profile-card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.profile-card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 2px solid #000;
+}
+
+h2, p {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  margin-top: 10px;
+  padding: 8px 16px; /* Adjusted padding for better proportions */
+  border: none;
+  border-radius: 4px;
+  background-color: #007BFF; /* Blue button color */
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Main Profile Page */
+.main-profile-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f5f5f5; /* Light background color */
+}
+
+.main-profile-page img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.main-profile-page h1 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.main-profile-page p {
+  font-size: 1em;
+  margin-bottom: 10px;
+}
+
+.main-profile-page a {
+  display: flex;
+  align-items: center;
+  font-size: 1em;
+  color: #b30045;
+  text-decoration: none;
+  margin-bottom: 20px;
+}
+
+.main-profile-page button {
+  padding: 10px 20px;
+  background-color: #b30045;
+}
+
+.main-profile-page button:hover {
+  background-color: #b30045;
+}
+
+.arrow {
+  font-size: 50px;
+  color: #b30045;
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 768px) {
+  .home-page {
+    justify-content: center;
+  }
+
+  .profile-card {
+    width: 100%;
+  }
+}
+
+
+
+
+
+/* Main Profile Page */
+.main-profile-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f5f5f5; /* Light background color */
+}
+
+@keyframes heartbeat {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.1);
+  }
+  50% {
+    transform: scale(1);
+  }
+  75% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.main-profile-page h1 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.main-profile-page p {
+  font-size: 1em;
+  margin-bottom: 10px;
+}
+
+.main-profile-page a {
+  display: flex;
+  align-items: center;
+  font-size: 1em;
+  color: #b30045;
+  text-decoration: none;
+  margin-bottom: 20px;
+}
+
+.main-profile-page button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color:  #b30045;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s ease;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+  animation: heartbeat 1.5s infinite; 
+}
+
+.main-profile-page button:hover {
+  background-color: #b30045;
+}
+
+.arrow {
+  font-size: 50px;
+  color: #b30045;
+}
